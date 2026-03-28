@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StormCraft - лучший Minecraft сервер с голосовым чатом, кланами и уникальными плагинами. Присоединяйся!">
+    <meta name="keywords" content="minecraft, сервер, stormcraft, выживание, кланы, голосовой чат">
+    <title>StormCraft - Minecraft Server</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>StormCraft</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#features">Особенности</a></li>
+                <li><a href="#how-to-play">Как играть</a></li>
+                <li><a href="#stats">Статистика</a></li>
+                <li><a href="#discord">Discord</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                <i class="fas fa-bolt lightning"></i>
+                StormCraft
+            </h1>
+            <p class="hero-subtitle">Лучший Minecraft сервер с голосовым чатом</p>
+            <div class="server-info">
+                <div class="ip-box" onclick="copyIP()">
+                    <span id="server-ip">mc.storm-craft.ru</span>
+                    <i class="fas fa-copy"></i>
+                </div>
+                <div id="copy-message">IP скопирован!</div>
+            </div>
+            <div class="server-status">
+                <span class="status-dot online"></span>
+                <span id="status-text">Онлайн: <span id="player-count">0</span>/100</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#how-to-play" class="btn btn-primary">
+                    <i class="fas fa-play"></i> Начать играть
+                </a>
+                <a href="https://discord.gg/yourserver" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Голосовой чат</h3>
+                    <p>Общайся с игроками в реальном времени с помощью Simple Voice Chat</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Кланы и PvP</h3>
+                    <p>Создавай кланы, сражайся с другими игроками и захватывай территории</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Защита от читеров</h3>
+                    <p>Продвинутая античит система для честной игры</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Приваты</h3>
+                    <p>Защити свою постройку с помощью удобной системы приватов</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Магазины</h3>
+                    <p>Покупай и продавай предметы у других игроков</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Ежедневные ивенты</h3>
+                    <p>Участвуй в конкурсах и получай ценные призы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Play Section -->
+    <section id="how-to-play" class="how-to-play">
+        <div class="container">
+            <h2 class="section-title">Как начать играть?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Запусти Minecraft</h3>
+                        <p>Версия сервера: <strong>1.21.10</strong><br>
+                        Поддерживаются версии: <strong>1.8.x - 1.21.11</strong></p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Добавь сервер</h3>
+                        <p>Нажми "Multiplayer" → "Add Server"<br>
+                        Введи адрес: <strong>mc.storm-craft.ru</strong></p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Подключайся!</h3>
+                        <p>Нажми "Join Server" и начни своё приключение на StormCraft!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="version-info">
+                <i class="fas fa-info-circle"></i>
+                <p>Для голосового чата установи мод <strong>Simple Voice Chat</strong> (Fabric/Forge)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <h2 class="section-title">Статистика сервера</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number" id="online-players">0</div>
+                    <div class="stat-label">Игроков онлайн</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div class="stat-number">2026</div>
+                    <div class="stat-label">Год основания</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-map"></i>
+                    <div class="stat-number">~30млн.</div>
+                    <div class="stat-label">Размер мира</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-bolt"></i>
+                    <div class="stat-number">20</div>
+                    <div class="stat-label">TPS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Section -->
+    <section id="discord" class="discord">
+        <div class="container">
+            <div class="discord-box">
+                <i class="fab fa-discord discord-icon"></i>
+                <h2>Присоединяйся к нашему Discord!</h2>
+                <p>Общайся с другими игроками, получай новости и участвуй в ивентах</p>
+                <a href="https://discord.gg/HtyDTxRFXZ" target="_blank" class="btn btn-discord">
+                    <i class="fab fa-discord"></i> Перейти на Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-bolt"></i> StormCraft</h3>
+                    <p>Лучший Minecraft сервер с голосовым чатом и уникальной атмосферой</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#features">Особенности</a></li>
+                        <li><a href="#how-to-play">Как играть</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-globe"></i> mc.storm-craft.ru</li>
+                        <li><i class="fab fa-discord"></i> Discord сервер</li>
+                        <li><i class="fas fa-envelope"></i> mmarat03@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StormCraft. Not affiliated with Mojang AB.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
